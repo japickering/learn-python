@@ -1,0 +1,13 @@
+{
+  "name": "learn-python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.py",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
