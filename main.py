@@ -1,5 +1,5 @@
 # medical data validator
-# https://www.freecodecamp.org/learn/python-v9/workshop-medical-data-validator/step-26
+# https://www.freecodecamp.org/learn/python-v9/workshop-medical-data-validator/step-35
 
 import re
 
@@ -43,7 +43,11 @@ def find_invalid_records(
     patient_id, age, gender, diagnosis, medications, last_visit_id
 ):
     constraints = {
-        'patient_id': isinstance(patient_id, str) and re.search('p', patient_id, re.IGNORECASE)
+        'patient_id': isinstance(patient_id, str) and re.fullmatch('p\d+', patient_id, re.IGNORECASE),
+        'age': isinstance(age, int) and age >= 18,
+        'gender': isinstance(gender, str) and gender.lower() in ('male', 'female'),
+        'diagnosis': isinstance(diagnosis, str) or diagnosis is None,
+        'medications': isinstance(medications, list)
     }
     return constraints
 
