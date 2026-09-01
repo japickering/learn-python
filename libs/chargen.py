@@ -37,3 +37,7 @@ def create_character(name, strength, intelligence, charisma):
 
     # Format output
     return f"{name}\nSTR {stat_bar(strength)}\nINT {stat_bar(intelligence)}\nCHA {stat_bar(charisma)}"
+
+
+# run app
+print(create_character("ren", 3, 2, 2))
