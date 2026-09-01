@@ -1,4 +1,4 @@
-from shared.planet import Planet
+from classes.planet import Planet
 
 # create planets
 planet_1 = Planet('Earth', 'Homeworld', 'Sun')
