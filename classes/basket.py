@@ -1,0 +1,32 @@
+class ShoppingBasket:
+    def __init__(self):
+        self.items = []
+
+    def add(self, item):
+        self.items.append(item)
+
+    def remove(self, item):
+        if item in self.items:
+            self.items.remove(item)
+        else:
+            print(f'{item} is not in Basket')
+
+    def list_items(self):
+        return self.items
+
+    def __len__(self):
+        return len(self.items)
+
+    def __getitem__(self, index):
+        return self.items[index]
+
+    def __contains__(self, item):
+        return item in self.items
+
+    def __iter__(self):
+        return iter(self.items)
+
+# basket = ShoppingBasket()
+# basket.add('Laptop')
+# print(len(basket))
+# print('Laptop' in basket)
