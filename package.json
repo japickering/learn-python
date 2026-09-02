@@ -12,7 +12,7 @@
     "tutorial"
   ],
   "author": "James Pickering",
-  "license": "Creative Commons Non-Commercial",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
