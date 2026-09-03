@@ -1,4 +1,4 @@
-# Leaern Python
+# Learn Python
 
 A library of Project coding projects for the 
 [Freecodecamp Python Certification](https://www.freecodecamp.org).
